@@ -92,15 +92,13 @@ __November 2020__
 - This presentation is for educational purposes only.
 
 - The views expressed in this presentation are those of the presenters, and are not necessarily shared by Milliman, Inc. or RStudio, PBC.
-
+&lt;br&gt;
 - Neither Milliman, Inc. nor RStudio, PCB. guarantee the accuracy, reliability, or completeness of the information provided in this presentation.
 
 - Nothing in this presentation should be construed as investment advice or as a recommendation to purchase, hold, or sell any financial products.
 
 - Nothing in this presentation should be construed as a statement of actuarial opinion.
 
-
-- This presentation has not been sponsored or approved by RStudio, PBC.
 
 ---
 
@@ -197,21 +195,13 @@ Allow only authorized users to access data
 - Authenticate users
 - Implement authorization
   + Configure allowed users/groups
-      * declarative security
   + Programmatically allow/disallow users/groups
-      * imperative security
-      * supports dynamic content based on user
+      * supports dynamic content based on user/group
 ]
 .pull-right[
 ![:scale 100%](images/auth-options.png)
 
 ]
-
----
-
-# Proxied authentication example
-
-.center[![:scale 75%](images/proxied-auth.png)]
 
 ---
 
@@ -223,7 +213,7 @@ Allow only authorized users to access data
 
 &lt;br&gt;
 
-.center[![:scale 65%](images/ssos.png)]
+.center[![:scale 100%](images/ssos.png)]
 
 ---
 
@@ -233,7 +223,7 @@ Allow only authorized users to access data
 .pull-left[
 **Usability Factors**
 - Response latency
-- Start up speed
+- Start up time
 - Resource utilitization
 ]
 .pull-right[
@@ -244,11 +234,11 @@ Allow only authorized users to access data
 
 ]
 
-.center[![:scale 60%](images/sspro.png)]
+.center[![:scale 100%](images/sspro.png)]
 
 ---
 
-# Security &amp; Usability
+# RStudio support for security and enhanced usability
 
 &lt;br&gt;&lt;br&gt;
 
@@ -409,7 +399,7 @@ layout: true
 .panel[.panel-name[Initiate Golem]
 
 .center[
-![:scale 50%](golem_start.png)
+![:scale 50%](golem_start.PNG)
 ]
 
 ]
@@ -611,7 +601,7 @@ Automated software deployment and test process triggered from continuous-integra
 Azure DevOps  
 Circle CI  
 Travis CI  
-GitHUb Actions  
+GitHub Actions  
 Gitlab CI  
 Jenkins
 ]
@@ -647,18 +637,15 @@ class: inverse, left, middle, seperator
 ---
 
 
-## What we covered
+## What we talked about
 
 .pull-left[
 ### Security
 - HTTPS
-- Authentication, Authorization and Permissions
-- Proxied Authentication with Shiny Server
+- Authentication
 
 ### Usability
-- Scaling shiny apps
-- Performance tuning with R processes
-- Authentication and Scaling options with Shiny Server, Shiny Server Pro and RStudio Connect
+- Scaling and performance tuning
 ]
 .pull-right[
 ### Maintainability
@@ -667,11 +654,11 @@ class: inverse, left, middle, seperator
 
 ### Reliability
 - Automated Testing
-- Continuous Integration/Continuous Delivery (CI/CD)
+- CI/CD
 ]
 ---
 
-## What we didn't cover
+## What we didn't have time to cover
 
 ### In-app scaling
 - Asynchronous Operations
@@ -712,12 +699,20 @@ class: inverse, left, middle, seperator
 ---
 
 # Q&amp;A
+
+&lt;br&gt;
+
 ## Presenter contact info:
+.pull-left[
 ### Kshitij Srivastava
 #### kshitij.srivastava@milliman.com
+]
+.pull-right[
 ### Guy Yollin
 #### guy.yollin@milliman.com
-&lt;br style="margin:-10px"&gt;
+]
+
+&lt;br&gt;
 # Thank You!
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
