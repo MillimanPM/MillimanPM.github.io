@@ -824,7 +824,8 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
 document
   .querySelectorAll(
     '.remark-slide-content' +
-    ':not(.title-slide .seperator)' +
+    ':not(.title-slide)' +
+    ':not(.seperator)' +
     // add additional classes to exclude here, e.g.
     // ':not(.inverse)' +
     ':not(.hide-logo)'
