@@ -1,0 +1,65 @@
+h1, h2, h3 {
+  font-weight: normal;
+  color: #004877;
+}
+a, a > code {
+  color: #9DB290;
+}
+.remark-code-line-highlighted { background-color: rgba(198, 201, 202, 0.3); }
+
+.inverse {
+  background-color: #004877;
+}
+.inverse, .inverse h1, .inverse h2, .inverse h3, .inverse a, inverse a > code {
+  color: #fff;
+}
+.golem_icon {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+}
+
+.inverse_logo {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+}
+
+.title-logo {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  margin-left: 35px;
+}
+
+.title-slide {
+  background-image: url(milliman_background2.png);
+  background-size: cover;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.title-slide h1 {
+  text-shadow: none;
+  margin-top: -120px;
+}
+
+.span {
+  display: inline;
+}
+
+.title-slide h2, .title-slide h4 {
+  line-height: 1.5em;
+  line-height: 20%;
+}
+
+.small { font-size: 65% }
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin-right: 20px;
+}
