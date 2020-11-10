@@ -55,7 +55,7 @@ __November 2020__
 ## Life &amp; Annuity Predictive Analtyics practice within Milliman
 .pull-left[
 
-### Kshtij Srivastava
+### Kshitij Srivastava
 
 
 - __Data Scientist / Software Architect__
@@ -99,17 +99,6 @@ __November 2020__
 
 - Nothing in this presentation should be construed as a statement of actuarial opinion.
 
-
----
-
-# Agenda
-
-### Introduction
-### Security &amp; Usability
-### Maintainability
-### Reliability
-### Summary
-### Q &amp; A
 
 ---
 
@@ -285,9 +274,13 @@ layout: true
 # Modules - Example
 
 
+
+
 .panelset[
 
 .panel[.panel-name[Without Modules]
+
+Code replication. Monolithic artifact.
 
 
 ```r
@@ -313,6 +306,8 @@ server &lt;- function(input, output, session) {
 
 .panel[.panel-name[UI Module]
 
+Notice that the input variables are namespaced.
+
 
 ```r
 ## Example from https://mastering-shiny.org/scaling-modules.html#module-objects
@@ -328,6 +323,8 @@ histogramUI &lt;- function(id, df) {
 ]
 
 .panel[.panel-name[UI Server]
+
+Server module includes an additional parameter'df'.
 
 
 ```r
@@ -345,6 +342,8 @@ histogramServer &lt;- function(id, df) {
 ]
 
 .panel[.panel-name[app.R (with modules)]
+
+At this point the main app.R file and the module are loosely coupled. This is scalable, since changing the behavior of the app needs change in just one place as opposed to two places, if modules weren't used.
 
 
 ```r
@@ -407,6 +406,8 @@ layout: true
 
 .panel[.panel-name[Add metadata]
 
+Add package description
+
 
 ```r
 ## Fill the DESCRIPTION ----
@@ -424,6 +425,9 @@ golem::fill_desc(
 ]
 
 .panel[.panel-name[Add functions]
+
+Helper functions to create utility functions,add package dependancy or add tests.
+
 
 ```r
 ## Add helper functions ----
@@ -447,6 +451,9 @@ golem::add_module( name = "name_of_module2" ) # Name of the module
 
 .panel[.panel-name[Add tests/external dep.]
 
+Add external dependancies
+
+
 ```r
 ## Add helper functions ----
 golem::add_fct( "helpers" ) 
@@ -468,6 +475,9 @@ usethis::use_test( "app" )
 ]
 
 .panel[.panel-name[Deployment files]
+
+Generate deployment files
+
 
 ```r
 # Deploy
@@ -700,18 +710,21 @@ class: inverse, left, middle, seperator
 
 # Q&amp;A
 
-&lt;br&gt;
+## Presentation slides:
+
+[https://millimanpm.github.io/ShinyInProduction.html](https://millimanpm.github.io/ShinyInProduction.html)
 
 ## Presenter contact info:
 .pull-left[
-### Kshitij Srivastava
-#### kshitij.srivastava@milliman.com
+Kshitij Srivastava
+
+[kshitij.srivastava@milliman.com](kshitij.srivastava@milliman.com)
 ]
 .pull-right[
-### Guy Yollin
-#### guy.yollin@milliman.com
-]
+Guy Yollin  
 
+[guy.yollin@milliman.com](guy.yollin@milliman.com)
+]
 &lt;br&gt;
 # Thank You!
     </textarea>
